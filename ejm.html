@@ -5,19 +5,42 @@
 	</head>
 	
 	<body>
-		<label>Nombre*:</label>
-		<input type="text" placeholder="Digite el nombre"/>
-		<br>
-		<label>Edad*:</label>
-		<input type="number" placeholder="Digite su edad"/>
-		<br>
-		<label>Correo<br>electrónico*:</label>
-		<input type="email" placeholder="Digite el correo electrónico"/>
-		<br>
-		<div align="center">		
-			<button>Enviar datos</button>
-			<button>Cancelar</button>
-		</div>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label>Nombre*:</label>
+					</td>
+					<td>
+						<input type="text" placeholder="Digite el nombre" maxlength="20" autofocus required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Edad*:</label>
+					</td>
+					<td>
+						<input type="number" placeholder="Digite su edad" min="0" required/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Correo<br>electrónico*:</label>
+					</td>
+					<td>
+						<input type="email" placeholder="Digite el correo electrónico" maxlength="50" required/>
+					</td>
+				<tr>
+				<tr>
+					<td>
+						<div align="center">		
+							<button>Enviar datos</button>
+							<button>Cancelar</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
 	</body>
 
 </html>
