@@ -1,18 +1,17 @@
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>Ejemplo</title>
-	</head>
-	
-	<body>
-		<form>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Ejemplo</title>
+</head>
+<body>
+		<form action="Ejemplo.jsp" method="post">
 			<table>
 				<tr>
 					<td>
 						<label>Nombre*:</label>
 					</td>
 					<td>
-						<input type="text" placeholder="Digite el nombre" maxlength="20" autofocus required/>
+						<input type="text" name="name" placeholder="Digite el nombre" maxlength="20" required=""/>
 					</td>
 				</tr>
 				<tr>
@@ -20,7 +19,7 @@
 						<label>Edad*:</label>
 					</td>
 					<td>
-						<input type="number" placeholder="Digite su edad" min="0" required/>
+						<input type="number" name="age" placeholder="Digite su edad" min="0" required=""/>
 					</td>
 				</tr>
 				<tr>
@@ -28,19 +27,16 @@
 						<label>Correo<br>electrónico*:</label>
 					</td>
 					<td>
-						<input type="email" placeholder="Digite el correo electrónico" maxlength="50" required/>
+						<input type="email" name="email" placeholder="Digite el correo electrónico" maxlength="50" required=""/>
 					</td>
 				<tr>
 				<tr>
-					<td>
-						<div align="center">		
-							<button>Enviar datos</button>
-							<button>Cancelar</button>
-						</div>
+					<td colspan="2">	
+							<button type="submit" action="send">Enviar datos</button>
+							<button type="reset">Cancelar</button>
 					</td>
 				</tr>
 			</table>
 		</form>
 	</body>
-
 </html>
